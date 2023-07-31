@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- viewport, always include this line of code -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,8 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <title>Omnifood</title>
   </head>
   <body>
@@ -25,9 +28,14 @@
           <li><a class="main-nav-link" href="#meals-id">Meals</a></li>
           <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link" href="#try-for-free">Try for free</a></li>
+          <li><a class="btn btn--full" href="#try-for-free">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -474,7 +482,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container grid grid--5-cols">
+      <div class="container grid grid-footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
             <img class="logo" src="img/omnifood-logo.png" alt="Omnifood Logo" />
@@ -541,5 +549,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>

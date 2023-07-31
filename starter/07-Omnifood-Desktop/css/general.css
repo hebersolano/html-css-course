@@ -63,6 +63,7 @@ html {
   /* font-size: 10px; */
   /* 10px /16px = 62.5%  browser font size setting*/
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -70,6 +71,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 strong {
@@ -255,6 +259,7 @@ strong {
 
 .list-item {
   font-size: 1.8rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 1.6rem;
